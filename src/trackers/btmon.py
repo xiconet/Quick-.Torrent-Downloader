@@ -1,4 +1,4 @@
-from trackers.base_tracker import BaseTracker
+from src.trackers.base_tracker import BaseTracker
 
 class Tracker(BaseTracker):
     def __init__(self):
