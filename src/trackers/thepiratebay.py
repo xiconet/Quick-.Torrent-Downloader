@@ -2,8 +2,8 @@ import urllib2
 
 from BeautifulSoup import BeautifulSoup
 
-from trackers.base_tracker import BaseTracker
-from errors import DownloaderError
+from src.trackers.base_tracker import BaseTracker
+from src.errors import DownloaderError
 from utils import remove_html_tags
 
 class Tracker(BaseTracker):
