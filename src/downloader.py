@@ -186,5 +186,6 @@ class Downloader(object):
         if os.name == 'posix':
             subprocess.call(('open', file_path))
         elif os.name == 'nt':
-            subprocess.call(('start', file_path))
+            torrent_client = 'C:\Program Files\utorrent\utorrent.exe' # change to something else if needed
+            subprocess.call([torrent_client, file_path])
         return 0
